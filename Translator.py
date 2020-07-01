@@ -1,11 +1,12 @@
 from yandex_translate import YandexTranslate
 import json
 import numpy as np
+import const
 
 class Translator:
 
     def __init__(self):
-        yandex_token = 'trnsl.1.1.20160731T003337Z.2e4a2410132a1289.643df1d13471d33035d01a863f50536e71f8ef60'
+        yandex_token = const.yandex_token
         self.trans = YandexTranslate(yandex_token)
         
         with open('phrases.txt') as json_file:

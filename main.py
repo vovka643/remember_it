@@ -2,6 +2,7 @@ from MyBot import MyBot
 from Translator import Translator
 from User import User
 from DataBase import DataBase
+import const
 
 import datetime
 import traceback
@@ -23,7 +24,7 @@ def help_handler(user_id, bot):
     
 translator = Translator()
 
-bot_token = "421665360:AAHBxRmalwE6S_pqHKEjyuxg778tuascjc8" #justReadBooktmp2_bot
+bot_token = const.bot_token #justReadBooktmp2_bot
 bot = MyBot(bot_token)
 
 #add Data Base
